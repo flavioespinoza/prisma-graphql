@@ -11,6 +11,7 @@
   "author": "Flavio Espinoza",
   "license": "ISC",
   "dependencies": {
+    "chance": "^1.0.18",
     "graphql": "^14.0.2",
     "prisma-client-lib": "^1.20.0"
   },

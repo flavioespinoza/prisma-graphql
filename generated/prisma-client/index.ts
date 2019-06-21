@@ -10,6 +10,7 @@ import {
 } from "prisma-client-lib";
 import { typeDefs } from "./prisma-schema";
 
+
 export type AtLeastOne<T, U = { [K in keyof T]: Pick<T, K> }> = Partial<T> &
   U[keyof U];
 
