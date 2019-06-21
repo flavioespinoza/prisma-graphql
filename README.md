@@ -21,7 +21,7 @@ Use `yarn` to install dependencies,
 yarn install
 ```
 
-## Prisma
+## Prisma API
 Deploy Prisma GraphQL Api
 ```bash
 prisma deploy
@@ -32,12 +32,12 @@ Generate CRUD building blocks
 bash crud.bash
 ```
 
-## GraphQL
+## GraphQL Client
 playground: http://localhost:4466/
 
 db_admin: http://localhost:4466/_admin
 
-## Data
+## MongoDB
 Generate user
 ```bash
 yarn start
