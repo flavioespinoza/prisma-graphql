@@ -16,13 +16,6 @@ yarn install
 ```
 
 ## Data
-
-Use [Chance.js](https://chancejs.com/person/first.html) to generate user data
-```typescript
-
-```
-
-
 Generate user
 ```bash
 yarn start
