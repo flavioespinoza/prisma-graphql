@@ -4,7 +4,6 @@
 [Explore Features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
 
 ## Getting Started
-
 Clone the repo
 ```bash
 git clone https://github.com/flavioespinoza/prisma-graphql.git
@@ -16,7 +15,6 @@ yarn install
 ```
 
 ## Prisma
-
 Deploy Prisma GraphQL Api
 ```bash
 prisma deploy
