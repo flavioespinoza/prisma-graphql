@@ -1,7 +1,14 @@
 # prisma-graphql
+Prisma replaces traditional ORMs and simplifies database workflows:
 
-[Prisma Setup Guide](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
-[Explore Features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
+- Access: Type-safe database access with the auto-generated Prisma client (in JavaScript, TypeScript, Go)
+- Migrate: Declarative data modelling and migrations (optional)
+- Manage: Visual data management with Prisma Admin
+
+It is used to build GraphQL, REST, gRPC APIs and more. Prisma currently supports MySQL, PostgreSQL, MongoDB.
+
+- [Prisma Setup Guide](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
+- [Explore Features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
 
 ## Getting Started
 Clone the repo
@@ -25,11 +32,10 @@ Generate CRUD building blocks
 bash crud.bash
 ```
 
-Playground
-- http://localhost:4466/
+## GraphQL
+playground: http://localhost:4466/
 
-Admin
-- http://localhost:4466/_admin
+db_admin: http://localhost:4466/_admin
 
 ## Data
 Generate user
