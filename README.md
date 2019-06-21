@@ -6,7 +6,8 @@ Prisma replaces traditional ORMs and simplifies database workflows:
 - Manage: Visual data management with Prisma Admin
 
 It is used to build GraphQL, REST, gRPC APIs and more. Prisma currently supports MySQL, PostgreSQL, MongoDB.
-
+- [GitHub](https://github.com/prisma/prisma)
+- [Examples: (go, node, apollo, and more)](https://github.com/prisma/prisma)
 - [Prisma Setup Guide](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
 - [Explore Features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
 
