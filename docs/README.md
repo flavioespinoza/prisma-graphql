@@ -31,7 +31,6 @@ Below are select few ready-to-run examples demonstrating various use cases
 | [`docker-mysql`](https://github.com/prisma/prisma-examples/tree/master/typescript/docker-mysql) | Set up Prisma locally with MySQL |
 | [`docker-postgres`](https://github.com/prisma/prisma-examples/tree/master/typescript/docker-postgres) | Set up Prisma locally with PostgreSQL |
 
-
 ##### Golang
 
 | Demo | Description |

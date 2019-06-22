@@ -25,7 +25,8 @@ async function main() {
         },
       ],
     },
-  })
+	})
+	
   console.log(`Created new user: ${newUser.name} (ID: ${newUser.id})`)
 
   // Read all users from the database and print them to the console
@@ -87,12 +88,10 @@ const Mutation = prismaObjectType({
 
 const schema = makePrismaSchema({
   types: [Query, Mutation],
-
   prisma: {
     datamodelInfo,
     client: prisma,
   },
-
   outputs: {
     schema: path.join(__dirname, './generated/schema.graphql'),
     typegen: path.join(__dirname, './generated/nexus.ts'),
