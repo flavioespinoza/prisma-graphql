@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node index.ts",
+    "balls": "ts-node codegen-balls.ts",
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly index.ts",
     "types": "graphql-codegen"
   },
@@ -13,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphql-codegen/typescript-react-apollo": "^1.3.0",
     "chance": "^1.0.18",
     "graphql": "^14.3.1",
     "graphql-codegen": "^0.4.0",
