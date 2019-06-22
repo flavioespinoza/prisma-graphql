@@ -28,12 +28,16 @@ input PostCreateWithoutAuthorInput {
 }
 
 enum PostOrderByInput {
+  createdAt_ASC
+  createdAt_DESC
   id_ASC
   id_DESC
   published_ASC
   published_DESC
   title_ASC
   title_DESC
+  updatedAt_ASC
+  updatedAt_DESC
 }
 
 input PostWhereInput {
@@ -53,6 +57,8 @@ input PostWhereInput {
   id_not_in: [ID!]
   id_not_starts_with: ID
   id_starts_with: ID
+  NOT: [PostWhereInput!]
+  OR: [PostWhereInput!]
   published: Boolean
   published_not: Boolean
   title: String
@@ -139,5 +145,9 @@ input UserWhereInput {
   name_not_in: [String!]
   name_not_starts_with: String
   name_starts_with: String
+  NOT: [UserWhereInput!]
+  OR: [UserWhereInput!]
+  posts_every: PostWhereInput
+  posts_none: PostWhereInput
   posts_some: PostWhereInput
 }

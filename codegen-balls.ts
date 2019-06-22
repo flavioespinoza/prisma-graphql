@@ -3,18 +3,18 @@ import { generate } from '@graphql-codegen/cli';
 async function _generate() {
   const generatedFiles = await generate(
     {
-      schema: 'http://localhost:4466/',
-      documents: './generated/**/*.graphql',
+      schema: './_ado/_person.schema.graphql',
       generates: {
-        [process.cwd() + '/_ado/']: {
+        [process.cwd() + '/_ado/_person.tsx']: {
           plugins: ['typescript', 'typescript-operations', 'typescript-react-apollo'],
         },
       },
 			config: {
-				withHOC: false
+				withHOC: true
 			}
     },
     true
   )
 }
 
+_generate()

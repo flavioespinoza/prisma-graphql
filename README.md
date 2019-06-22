@@ -45,11 +45,14 @@ Generate user
 yarn start
 ```
 
-
-
-
 ```bash
 prisma init --endpoint https://ds-webshield.resilient-networks.com/v1/graphql
 ```
 
+## Linux Commands
 
+### list /etc/services by port
+A plain ASCII file providing a mapping between friendly textual names for internet services, and their underlying assigned port numbers and protocol types. Every networking program should look into this file to get the port number (and protocol) for its service. You can view this file with the help of cat or less command:
+```bash
+pm2 start ts-node -- -P tsconfig.json ./index.ts
+```

@@ -39,6 +39,8 @@ export interface NexusGenInputs {
     id_not_in?: string[] | null; // [ID!]
     id_not_starts_with?: string | null; // ID
     id_starts_with?: string | null; // ID
+    NOT?: NexusGenInputs['PostWhereInput'][] | null; // [PostWhereInput!]
+    OR?: NexusGenInputs['PostWhereInput'][] | null; // [PostWhereInput!]
     published?: boolean | null; // Boolean
     published_not?: boolean | null; // Boolean
     title?: string | null; // String
@@ -109,12 +111,16 @@ export interface NexusGenInputs {
     name_not_in?: string[] | null; // [String!]
     name_not_starts_with?: string | null; // String
     name_starts_with?: string | null; // String
+    NOT?: NexusGenInputs['UserWhereInput'][] | null; // [UserWhereInput!]
+    OR?: NexusGenInputs['UserWhereInput'][] | null; // [UserWhereInput!]
+    posts_every?: NexusGenInputs['PostWhereInput'] | null; // PostWhereInput
+    posts_none?: NexusGenInputs['PostWhereInput'] | null; // PostWhereInput
     posts_some?: NexusGenInputs['PostWhereInput'] | null; // PostWhereInput
   }
 }
 
 export interface NexusGenEnums {
-  PostOrderByInput: "id_ASC" | "id_DESC" | "published_ASC" | "published_DESC" | "title_ASC" | "title_DESC"
+  PostOrderByInput: "createdAt_ASC" | "createdAt_DESC" | "id_ASC" | "id_DESC" | "published_ASC" | "published_DESC" | "title_ASC" | "title_DESC" | "updatedAt_ASC" | "updatedAt_DESC"
 }
 
 export interface NexusGenRootTypes {

@@ -4,6 +4,7 @@ import * as path from 'path'
 import { stringArg, idArg } from 'nexus'
 import { prismaObjectType, makePrismaSchema } from 'nexus-prisma'
 import { GraphQLServer } from 'graphql-yoga'
+const log = require('ololog')
 const Chance = require('chance')
 const chance = new Chance()
 
@@ -103,4 +104,4 @@ const _GraphQLServer = new GraphQLServer({
   schema,
   context: { prisma },
 })
-_GraphQLServer.start(() => console.log('_GraphQLServer is running on http://localhost:4000'))
+_GraphQLServer.start(() => log.lightCyan('Prisma_Server is running on http://localhost:4000'))
