@@ -10,8 +10,6 @@ The Prisma client is an TypeScript auto-generated library that provides type-saf
 - [docs](https://www.prisma.io/client/client-typescript/)
 - [getting started](https://www.prisma.io/docs/1.34/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
 
-
-
 #### nexus-prisma
 GraphQL ORM + CRUD schema generator for GraphQL enpoints
 - [getting started](https://nexus.js.org/docs/database-access-with-prisma#getting-started)
