@@ -84,12 +84,10 @@ typings/
 
 # Local sandbox
 scratch/
+_scratch/
 
 # Resilient credentials
 credentials/
 
 # DS_Store
 .DS_Store
-
-_scratch
-
