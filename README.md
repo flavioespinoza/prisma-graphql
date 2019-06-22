@@ -1,16 +1,10 @@
 # prisma-graphql
-Prisma replaces traditional ORMs and simplifies database workflows:
 
-- Access: Type-safe database access with the auto-generated Prisma client (in JavaScript, TypeScript, Go)
-- Migrate: Declarative data modelling and migrations (optional)
-- Manage: Visual data management with Prisma Admin
+GraphQL layer tools incl. ORM, Migrations and Admin UI (Postgres, MySQL & MongoDB)
 
-It is used to build GraphQL, REST, gRPC APIs and more. Prisma currently supports MySQL, PostgreSQL, MongoDB.
-
-- [GitHub](https://github.com/prisma/prisma)
-- [Examples: (go, node, apollo, and more)](https://github.com/prisma/prisma)
-- [Prisma Setup Guide](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
-- [Explore Features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
+- [explore features](https://www.prisma.io/docs/get-started/04-explore-features-f001/)
+- [typescript setup](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-TYPESCRIPT-t002/)
+- [github](https://github.com/prisma/prisma)
 
 ## Getting Started
 Clone the repo
