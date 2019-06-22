@@ -4,6 +4,7 @@ import * as path from 'path'
 import { stringArg, idArg } from 'nexus'
 import { prismaObjectType, makePrismaSchema } from 'nexus-prisma'
 import { GraphQLServer } from 'graphql-yoga'
+
 const log = require('ololog')
 const Chance = require('chance')
 const chance = new Chance()
@@ -55,8 +56,6 @@ const Query = prismaObjectType({
   },
 })
 
-console.log(JSON.stringify(Query))
-
 const Mutation = prismaObjectType({
   name: 'Mutation',
   definition(t) {
@@ -100,8 +99,9 @@ const schema = makePrismaSchema({
   },
 })
 
-const _GraphQLServer = new GraphQLServer({
+const PrismaServer = new GraphQLServer({
   schema,
   context: { prisma },
 })
-_GraphQLServer.start(() => log.lightCyan('Prisma_Server is running on http://localhost:4000'))
+
+PrismaServer.start(() => log.lightCyan('PrismaServer is running on http://localhost:4000'))
