@@ -91,4 +91,5 @@ credentials/
 # DS_Store
 .DS_Store
 
-ado/ref
+_scratch
+

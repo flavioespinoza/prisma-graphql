@@ -6,14 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node ./index.ts",
-    "pss": "ts-node ./index.ts",
-    "balls": "ts-node codegen-balls.ts",
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly index.ts",
     "types": "graphql-codegen",
 		"gen": "graphqlgen"
   },
   "keywords": [],
-  "author": "",
+  "author": "Flavio Espinoza <flavio.espinoza@gmail.com> (@FlavioEspinoza)",
   "license": "ISC",
   "dependencies": {
     "@graphql-codegen/typescript-operations": "^1.3.0",
